@@ -32,7 +32,7 @@ SYSTEM_INSTRUCTION = (
 def handle_message(message):
     try:
         response = client.models.generate_content(
-            model='gemini-1.5-pro-002',
+            model='gemini-3.8-pro',
             contents=message.text,
             config={
                 'system_instruction': SYSTEM_INSTRUCTION,
